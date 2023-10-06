@@ -44,5 +44,36 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(switcher);
             }
         });
+        EditText username, password;
+        Button btnlogin;
+        BD DB;
+
+            username = (EditText) findViewById(R.id.username);
+            password = (EditText) findViewById(R.id.Password);
+            btnlogin = (Button) findViewById(R.id.Signin);
+            DB = new BD(this);
+
+            btnlogin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    String user = username.getText().toString();
+                    String pass = password.getText().toString();
+
+                    if(user.equals("")||pass.equals(""))
+                        Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    else{
+                        Boolean checkuserpass = DB.checkusernamepassword(user, pass);
+                        if(checkuserpass==true){
+                            Toast.makeText(MainActivity.this, "Sign in successfull", Toast.LENGTH_SHORT).show();
+                            Intent intent  = new Intent(getApplicationContext(), Login.class);
+                            startActivity(intent);
+                        }else{
+                            Toast.makeText(MainActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+            });
+        }
     }
-}
+
