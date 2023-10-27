@@ -4,228 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#acc2d9"
+    android:background="#0000"
     tools:context=".Login">
 
 
-    <ScrollView
-        android:id="@+id/scroll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="qwerty"
-        android:labelFor="@id/header"
-        android:visibility="visible"
-        tools:visibility="visible">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <RelativeLayout
-                android:layout_width="299dp"
-                android:layout_height="370dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/white"
-                android:translationX="50dp"
-                android:translationY="60dp">
-
-
-                <ImageView
-                    android:id="@+id/phone2"
-                    android:layout_width="224dp"
-                    android:layout_height="195dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="41dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="35dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="50dp"
-                    android:background="@drawable/phone"
-                    android:gravity="center" />
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="103dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginBottom="10dp"
-                    android:backgroundTint="#094974"
-                    android:text="Купить"
-                    app:cornerRadius="2dp" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="203dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="48dp"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginEnd="49dp"
-                    android:layout_marginBottom="91dp"
-                    android:gravity="center"
-                    android:text="СУПЕРДУПЕР Телефон" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="68dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="83dp"
-                    android:layout_marginBottom="21dp"
-                    android:layout_toStartOf="@+id/button"
-                    android:text="50 000 Р"
-                    android:textSize="17sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="299dp"
-                android:layout_height="370dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/white"
-                android:translationX="50dp"
-                android:translationY="60dp">
-
-
-                <ImageView
-                    android:id="@+id/phone3"
-                    android:layout_width="224dp"
-                    android:layout_height="195dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="41dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="35dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="50dp"
-                    android:background="@drawable/phone"
-                    android:gravity="center" />
-
-                <Button
-                    android:id="@+id/button_buy"
-                    android:layout_width="103dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginBottom="10dp"
-                    android:backgroundTint="#094974"
-                    android:text="Купить"
-                    app:cornerRadius="2dp" />
-
-                <TextView
-                    android:id="@+id/name_product"
-                    android:layout_width="203dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="48dp"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginEnd="49dp"
-                    android:layout_marginBottom="91dp"
-                    android:gravity="center"
-                    android:text="СУПЕРДУПЕР Телефон" />
-
-                <TextView
-                    android:id="@+id/cost_3"
-                    android:layout_width="68dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="83dp"
-                    android:layout_marginBottom="21dp"
-                    android:layout_toStartOf="@+id/button_buy"
-                    android:text="50 000 Р"
-                    android:textSize="17sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="299dp"
-                android:layout_height="370dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/white"
-                android:translationX="50dp"
-                android:translationY="60dp"
-                android:layout_marginBottom="80dp">
-
-
-                <ImageView
-                    android:id="@+id/phone4"
-                    android:layout_width="224dp"
-                    android:layout_height="195dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="41dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="35dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="50dp"
-                    android:background="@drawable/phone"
-                    android:gravity="center" />
-
-                <Button
-                    android:id="@+id/button_buy_4"
-                    android:layout_width="103dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginBottom="10dp"
-                    android:backgroundTint="#094974"
-                    android:text="Купить"
-                    app:cornerRadius="2dp" />
-
-                <TextView
-                    android:id="@+id/name_product_4"
-                    android:layout_width="203dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="48dp"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginEnd="49dp"
-                    android:layout_marginBottom="91dp"
-                    android:gravity="center"
-                    android:text="СУПЕРДУПЕР Телефон" />
-
-                <TextView
-                    android:id="@+id/cost_4"
-                    android:layout_width="68dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="83dp"
-                    android:layout_marginBottom="21dp"
-                    android:layout_toStartOf="@+id/button_buy_4"
-                    android:text="50 000 Р"
-                    android:textSize="17sp" />
-            </RelativeLayout>
-
-
-        </LinearLayout>
-    </ScrollView>
 
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#1c7ca4">
+
 
         <ImageView
             android:id="@+id/imageView"
@@ -236,7 +26,82 @@
             android:scaleType="centerCrop"
             android:src="@drawable/logoza"
             android:translationX="-66dp" />
+
     </RelativeLayout>
+
+
+    <ScrollView
+
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="274dp"
+                android:layout_marginBottom="22dp"
+                android:text="Смартфоны"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="321dp"
+                android:layout_marginTop="70dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/recycler"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="21dp"
+                android:text="Телевизоры"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler"
+            android:layout_marginTop="76dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/recycler2"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="21dp"
+                android:text="Ноутбуки"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycler2"
+                android:layout_marginTop="66dp" />
+        </RelativeLayout>
+    </ScrollView>
 
 
 </RelativeLayout>
