@@ -49,25 +49,25 @@ public class Register extends AppCompatActivity {
                 String repass = repassword.getText().toString();
 
                 if(user.equals("")||pass.equals(""))
-                    Toast.makeText(Register.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Заполните все поля", Toast.LENGTH_SHORT).show();
                 else{
                     if(pass.equals(repass)){
                         Boolean checkuser = DB.checkusername(user);
                         if(checkuser==false){
                             Boolean insert = DB.insertData(user, pass);
                             if(insert==true){
-                                Toast.makeText(Register.this, "Registered successfully", Toast.LENGTH_SHORT).show();
-                              //  Intent intent = new Intent(getApplicationContext(),Login.class);
-                                //startActivity(intent);
+                                Toast.makeText(Register.this, "Регистрация прошла успешно", Toast.LENGTH_SHORT).show();
+                              Intent intent = new Intent(getApplicationContext(),Login.class);
+                              startActivity(intent);
                             }else{
-                                Toast.makeText(Register.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Register.this, "Неудалось зарегестрироваться", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else{
-                            Toast.makeText(Register.this, "User already exists! please sign in", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "Такой пользователь уже существует", Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(Register.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Register.this, "Пароли не совпадают", Toast.LENGTH_SHORT).show();
                     }
                 } }
         });
